@@ -8,12 +8,13 @@ This script can be safely used in a multi-odoo code base server because the defa
 If you set the parameter ```INSTALL_NGINX``` to ```True``` you should also configure workers. Without workers you will probably get connection loss issues. Look at [the deployment guide from Odoo](https://www.odoo.com/documentation/17.0/administration/install/deploy.html) on how to configure workers.
 
 ## Installation procedure
-
-##### 1. Download the script:
+##### Download and Install:
 ```
-sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/17.0/odoo_install.sh
+sudo wget https://raw.githubusercontent.com/R0GGER/InstallScript/16.0/odoo_install.sh &&\
+sudo chmod +x odoo_install.sh &&\
+sudo ./odoo_install.sh
 ```
-##### 2. Modify the parameters as you wish.
+##### Optional: Modify the parameters as you wish.
 There are a few things you can configure, this is the most used list:<br/>
 ```OE_USER``` will be the username for the system user.<br/>
 ```GENERATE_RANDOM_PASSWORD``` if this is set to ```True``` the script will generate a random password, if set to ```False```we'll set the password that is configured in ```OE_SUPERADMIN```. By default the value is ```True``` and the script will generate a random and secure password.<br/>
