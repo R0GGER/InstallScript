@@ -13,6 +13,10 @@ sudo chmod +x odoo_install.sh &&\
 sudo ./odoo_install.sh
 ```
 ##### Optional: Modify the parameters as you wish.
+```
+nano odoo_install.sh
+```
+
 There are a few things you can configure, this is the most used list:<br/>
 ```OE_USER``` will be the username for the system user.<br/>
 ```GENERATE_RANDOM_PASSWORD``` if this is set to ```True``` the script will generate a random password, if set to ```False```we'll set the password that is configured in ```OE_SUPERADMIN```. By default the value is ```True``` and the script will generate a random and secure password.<br/>
