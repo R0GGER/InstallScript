@@ -67,12 +67,16 @@ fi
 #--------------------------------------------------
 echo -e "\n---- Update Server ----"
 # universe package is for Ubuntu 18.x
+if [[ $(lsb_release -r -s) == "18.04" ]]; then
 sudo add-apt-repository universe
 # libpng12-0 dependency for wkhtmltopdf for older Ubuntu versions
 sudo add-apt-repository "deb http://mirrors.kernel.org/ubuntu/ xenial main"
 sudo apt-get update
-sudo apt-get upgrade -y
 sudo apt-get install libpq-dev
+else
+sudo apt-get update
+sudo apt-get upgrade -y
+fi
 
 #--------------------------------------------------
 # Install PostgreSQL Server
