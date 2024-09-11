@@ -9,11 +9,13 @@ If you set the parameter ```INSTALL_NGINX``` to ```True``` you should also confi
 
 ## Installation procedure
 
-##### 1. Download the script:
+##### Download and Install:
 ```
-sudo wget https://raw.githubusercontent.com/Yenthe666/InstallScript/16.0/odoo_install.sh
+sudo wget https://raw.githubusercontent.com/R0GGER/InstallScript/16.0/odoo_install.sh &&\
+sudo chmod +x odoo_install.sh &&\
+sudo ./odoo_install.sh
 ```
-##### 2. Modify the parameters as you wish.
+##### Optional: Modify the parameters as you wish.
 There are a few things you can configure, this is the most used list:<br/>
 ```OE_USER``` will be the username for the system user.<br/>
 ```GENERATE_RANDOM_PASSWORD``` if this is set to ```True``` the script will generate a random password, if set to ```False```we'll set the password that is configured in ```OE_SUPERADMIN```. By default the value is ```True``` and the script will generate a random and secure password.<br/>
@@ -29,14 +31,6 @@ There are a few things you can configure, this is the most used list:<br/>
 ```INSTALL_NGINX``` and ```ENABLE_SSL``` must be set to ```True``` and the placeholder in ```ADMIN_EMAIL``` must be replaced with a valid email address for certbot installation<br/>
   _By enabling SSL though Let's Encrypt you agree to the following [policies](https://www.eff.org/code/privacy/policy)_ <br/>
 
-#### 3. Make the script executable
-```
-sudo chmod +x odoo_install.sh
-```
-##### 4. Execute the script:
-```
-sudo ./odoo_install.sh
-```
 
 ## Where should I host Odoo?
 There are plenty of great services that offer good hosting. The script has been tested with a few major players such as [Google Cloud](https://cloud.google.com/), [Hetzner](https://www.hetzner.com/), [Amazon AWS](https://aws.amazon.com/) and [DigitalOcean](https://www.digitalocean.com/products/droplets/).
