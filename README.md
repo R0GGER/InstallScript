@@ -10,7 +10,7 @@ If you set the parameter ```INSTALL_NGINX``` to ```True``` you should also confi
 ## Installation procedure
 ##### Download and Install:
 ```
-sudo wget https://raw.githubusercontent.com/R0GGER/InstallScript/16.0/odoo_install.sh &&\
+sudo wget https://raw.githubusercontent.com/R0GGER/InstallScript/17.0/odoo_install.sh &&\
 sudo chmod +x odoo_install.sh &&\
 sudo ./odoo_install.sh
 ```
